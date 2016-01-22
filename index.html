@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Signal-map by abhie19</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Signal-map</h1>
-      <h2 class="project-tagline">An android application to help users find location with good cellular and Wifi reception.</h2>
-      <a href="https://github.com/abhie19/Signal-Map" class="btn">View on GitHub</a>
-      <a href="https://github.com/abhie19/Signal-Map/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/abhie19/Signal-Map/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <section class="main-content">
-      <h1>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Signal-map by abhie19</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Signal-map</h1>
+        <h2>An android application to help users find location with good cellular and Wifi reception.</h2>
+        <a href="https://github.com/abhie19/Signal-Map" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
 <a id="welcome-to-signal-map" class="anchor" href="#welcome-to-signal-map" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WELCOME TO SIGNAL MAP</h1>
 
 <blockquote>
@@ -66,76 +75,97 @@ MainActivity_WiFi:
 <h2>
 <a id="application-demo" class="anchor" href="#application-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>APPLICATION DEMO</h2>
 
-<ul>
-<li><p>You can launch the application by clicking on the app icon.
-(1)</p></li>
-<li>
+<p>You can launch the application by clicking on the app icon.</p>
+
+<p><img src="https://github.com/abhie19/Signal-Map/blob/master/Images/1.png?raw=true" alt=""></p>
+
 <h3>
-<a id="splash-screen-once-the-app-is-launched-you-will-see-the-splash-screen-that-connects-to-the-internet-to" class="anchor" href="#splash-screen-once-the-app-is-launched-you-will-see-the-splash-screen-that-connects-to-the-internet-to" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Splash Screen: Once the app is launched, you will see the splash screen that connects to the internet to</h3>
+<a id="splash-screen" class="anchor" href="#splash-screen" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Splash Screen</h3>
 
-<p>fetch the current map configurations.</p>
-</li>
-</ul>
+<p>Once the app is launched, you will see the splash screen that connects to the internet to fetch the current map configurations.</p>
 
-<p>(2)</p>
+<p><img src="https://github.com/abhie19/Signal-Map/blob/master/Images/2.png?raw=true" alt=""></p>
+
+<h3>
+<a id="option-page" class="anchor" href="#option-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Option Page</h3>
+
+<p>When you open our application on your android device, after the splash screen gets loaded, you will see an option page. You can either choose cellular or wifi by clicking either of the buttons.</p>
+
+<p><img src="https://github.com/abhie19/Signal-Map/blob/master/Images/3.png?raw=true" alt=""></p>
+
+<h3>
+<a id="cellular-information-page" class="anchor" href="#cellular-information-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cellular information Page</h3>
+
+<p>This is the cellular information page that gives the UI of the google map. There are three buttons on this page.</p>
 
 <ul>
-<li>###Option Page: When you open our application on your android device, after the splash screen gets loaded, you will see an option page. You can either choose cellular or wifi by clicking either of the buttons.</li>
-</ul>
-
-<p>(3)</p>
-
-<ul>
-<li>###Cellular information Page: This is the cellular information page that gives the UI of the google map. There are three
-buttons on this page.</li>
 <li>The City button takes you to the current city’s location and adds a marker to it.</li>
 <li>With the Submit Data button you can drop a pin on your current location indicating the signal strength of your carrier. You can click on the marker to view the signal strength.</li>
 <li>SS button is another button on this page that retrieves all the markers existing in the database on the map.</li>
 </ul>
 
-<p>(4)</p>
+<p><img src="https://github.com/abhie19/Signal-Map/blob/master/Images/4.png?raw=true" alt=""></p>
 
-<ul>
-<li>
 <h3>
-<a id="submit-data-button-click-when-you-click-on-the-button-submit-data-an-entry-is-created-in-the-database-and-a-marker-is-dropped-at-your-current-location-displaying-the-signal-strength-of-your-carrier-at-that-location" class="anchor" href="#submit-data-button-click-when-you-click-on-the-button-submit-data-an-entry-is-created-in-the-database-and-a-marker-is-dropped-at-your-current-location-displaying-the-signal-strength-of-your-carrier-at-that-location" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Submit Data Button Click: When you click on the button submit data, an entry is created in the database and a marker is dropped at your current location displaying the signal strength of your carrier at that location.</h3>
+<a id="submit-data-button-click" class="anchor" href="#submit-data-button-click" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Submit Data Button Click</h3>
 
-<p>(5)</p>
-</li>
-<li><h3>
-<a id="ss-button-click-when-you-click-on-this-button-all-the-entries-in-the-database-gets-displayed-on-the-map-in-the-form-of-markers-with-varied-signal-strengths-the-red-marker-indicates-that-the-signal-strength-is-low-blue-marker-indicates-that-the-signal-strength-is-average-and-the-green-marker-indicates-that-the-signal-strength-at-that-particular-location-is-good" class="anchor" href="#ss-button-click-when-you-click-on-this-button-all-the-entries-in-the-database-gets-displayed-on-the-map-in-the-form-of-markers-with-varied-signal-strengths-the-red-marker-indicates-that-the-signal-strength-is-low-blue-marker-indicates-that-the-signal-strength-is-average-and-the-green-marker-indicates-that-the-signal-strength-at-that-particular-location-is-good" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SS Button Click: When you click on this button, all the entries in the database gets displayed on the map in the form of markers with varied signal strengths. The red marker indicates that the signal strength is low, blue marker indicates that the signal strength is average and the green marker indicates that the signal strength at that particular location is good.</h3></li>
-</ul>
+<p>When you click on the button submit data, an entry is created in the database and a marker is dropped at your current location displaying the signal strength of your carrier at that location.</p>
 
-<p>(6)</p>
+<p><img src="https://github.com/abhie19/Signal-Map/blob/master/Images/5.png?raw=true" alt=""></p>
+
+<h3>
+<a id="ss-button-click" class="anchor" href="#ss-button-click" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SS Button Click</h3>
+
+<p>When you click on this button, all the entries in the database gets displayed on the map in the form of markers with varied signal strengths. The red marker indicates that the signal strength is low, blue marker indicates that the signal strength is average and the green marker indicates that the signal strength at that particular location is good.</p>
+
+<p><img src="https://github.com/abhie19/Signal-Map/blob/master/Images/6.png?raw=true" alt=""></p>
+
+<h3>
+<a id="inflater-menu-options" class="anchor" href="#inflater-menu-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Inflater Menu Options</h3>
+
+<p>The inflater menu consists of options such as to select carrier or to view markers within a certain distance.</p>
+
+<p><img src="https://github.com/abhie19/Signal-Map/blob/master/Images/7.png?raw=true" alt=""></p>
+
+<h3>
+<a id="wifi-page" class="anchor" href="#wifi-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wifi Page</h3>
+
+<p>This is the wifi information page that gives the UI of the google map. There are three buttons on this page.</p>
 
 <ul>
-<li>###Inflater Menu Options: The inflater menu consists of options such as to select carrier or to view markers within a certain distance.</li>
-</ul>
-
-<p>(7)</p>
-
-<ul>
-<li>###Wifi Page: This is the wifi information page that gives the UI of the google map. There are three buttons on this page.</li>
 <li>The City button takes you to the current city’s location and adds a marker to it.</li>
 <li>With the Submit Data button you can drop a pin on your current location indicating the wifi strength of the wifi to which you are connected. You can click on the marker to view the wifi strength.</li>
 <li>SS button is another button on this page that retrieves all the markers existing in the database on the map with varied wifi strengths.</li>
 </ul>
 
-<p>(8)</p>
+<p><img src="https://github.com/abhie19/Signal-Map/blob/master/Images/8.png?raw=true" alt=""></p>
 
-<ul>
-<li>### Wifi Page SS button click: When you click on this button, all the entries in the database gets displayed on the map in the form of markers with varied wifi strengths. The red marker indicates that the wifi strength is low, blue marker indicates that the wifi strength is average and the green marker indicates that the wifi strength at that particular location is good.</li>
-</ul>
+<h3>
+<a id="wifi-page-ss-button-click" class="anchor" href="#wifi-page-ss-button-click" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wifi Page SS button click</h3>
 
-<p>(9)</p>
+<p>When you click on this button, all the entries in the database gets displayed on the map in the form of markers with varied wifi strengths. The red marker indicates that the wifi strength is low, blue marker indicates that the wifi strength is average and the green marker indicates that the wifi strength at that particular location is good.</p>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/abhie19/Signal-Map">Signal-map</a> is maintained by <a href="https://github.com/abhie19">abhie19</a>.</span>
+<p><img src="https://github.com/abhie19/Signal-Map/blob/master/Images/9.png?raw=true" alt=""></p>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+<p>To conclude, I would say that smartphones offer a lot of functionalities, but we cannot deny that the primary reason for buying a phone is to communicate and Signal Map tries to enhance this primary functionality of our mobile devices.</p>
+        </section>
 
-    </section>
+        <aside id="sidebar">
+          <a href="https://github.com/abhie19/Signal-Map/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/abhie19/Signal-Map/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/abhie19/Signal-Map"></a> is maintained by <a href="https://github.com/abhie19">abhie19</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
 
   
   </body>
