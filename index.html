@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Signal-map by abhie19</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Signal-map</h1>
+      <h2 class="project-tagline">An android application to help users find location with good cellular and Wifi reception.</h2>
+      <a href="https://github.com/abhie19/Signal-Map" class="btn">View on GitHub</a>
+      <a href="https://github.com/abhie19/Signal-Map/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/abhie19/Signal-Map/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="welcome-to-signal-map" class="anchor" href="#welcome-to-signal-map" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WELCOME TO SIGNAL MAP</h1>
+
+<blockquote>
+<p>Have you ever felt like a phone call that's been disconnected?</p>
+</blockquote>
+
+<p>A quote by 'Shannen Doherty' which rightly expresses our desires to stay constantly connected with the world through our mobile phones. But, since nothing's perfect in the universe, such as the case with our mobile phones and their signals. Let's explore!</p>
+
+<h2>
+<a id="the-problem" class="anchor" href="#the-problem" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Problem</h2>
+
+<p>As the modern era proceeds, people inevitably tend to keep their smartphones with them all the time, which gives any application to reach out to the masses very easily and impact their lives. Majority of the people who are engaged in some kind of business, tend to travel a lot, which makes them go in and out of the area in the reach of their corresponding network providers. Because of this, there are constant glitches and cut offs during an ongoing conversation on the phone. The only way to eradicate this constant problem is to help them find a reliable network and that’s what we aim at doing. There have been a lot of cases at airports, railway stations, during travels or even at home where people inadvertently go out of the reachable zone and hence the connection goes down.</p>
+
+<p>In the recent days, reliance on telecommunication has surpassed the threshold and it has become inevitable to keep connected to cellular signals. Since it is not possible to achieve ideal cellular strengths at all locations, people face difficulties while travelling to places where cellular strength is very weak. As of now, there are no tools to overcome this problem and thus our application domain includes finding solutions to the problem of detecting good and poor signal strengths in the nearby area. </p>
+
+<p>The similar problem persists with the Wi-Fi signals perhaps because of the inability of the router to reach to a wider area or due to the various obstacles that come in the way. This leads to interruption in various online facilities and most importantly while making important transactions over the internet. In order to deal with such a scenario the user needs to figure out the location where he/she needs to be to carry on with a reliable connection.</p>
+
+<h2>
+<a id="the-solution" class="anchor" href="#the-solution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Solution</h2>
+
+<p>Now, since the problem is associated with the mobility of smartphones, the solution also need to be mobile. One of the best way to implement such a solution would be developing an application for the same smartphones which caused the problem in the first place. With the help of such an application the user will be able to differentiate low signal strength zones to that of the high and medium zones where communication doesn’t completely fade away. The concerned metrics such as network provider, signal strength, location, etc would be visible to the user on the interface of the application which itself would be based on Google Maps and extensive use of GPS available on the mobile phone. 
+Signal map is the realization of this idea in the form of an android application that provides users with the information of various network carriers and their signal strengths around them on a Google Map interface. This visualization would depend on which carrier user is on. For Example, if the user has a Vodafone network, then the map would show cellular information relating to Vodafone only. The similar concept applies to wi-fi signals also.</p>
+
+<h2>
+<a id="technical-overview" class="anchor" href="#technical-overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TECHNICAL OVERVIEW</h2>
+
+<ul>
+<li>We developed the android application using Android SDK in Eclipse.</li>
+<li>All the carrier, cellular signal, wifi signal, battery, GPS location data were obtained using androids' built in functions.</li>
+<li>In order to visualize the signal map, we used Google Maps with the use of Google Maps API from Google.</li>
+<li>We used MySQL database to host the data on the server and in case of low battery, we downloaded the data to the users device and store it in SQLite DB.</li>
+<li>We made following pages (Activity) for the application:
+Splash Activity:
+  This is the first screen that will show up with just a little animation to inform the user of the app being initialized on the user’s     device.
+Option Screen:
+  Option screen is the activity class to which the user is redirected automatically as the timer in the ‘splash activity’ class is         timed out. This activity presents users with the options to either select ‘Wifi’ module or ‘Cellular’ module.
+  It just makes use of two buttons and their 'setOnClickListener' class to redirect accordingly.
+Main Activity:
+  It is the activity class that is responsible to handle everything that goes on into the cellular module which ranges from fetching       network data from the device to that of integrating and interacting with the Google Maps.
+MainActivity_WiFi:
+  This activity is quite similar to main activity and performs mostly the same functionalities but with specific focus on WiFi rather than cellular. It is the activity class that is responsible to handle everything that goes on into the WiFi module which ranges from fetching WiFi data from the device to that of integrating and interacting with the Google Maps.</li>
+</ul>
+
+<h2>
+<a id="application-demo" class="anchor" href="#application-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>APPLICATION DEMO</h2>
+
+<ul>
+<li><p>You can launch the application by clicking on the app icon.
+(1)</p></li>
+<li>
+<h3>
+<a id="splash-screen-once-the-app-is-launched-you-will-see-the-splash-screen-that-connects-to-the-internet-to" class="anchor" href="#splash-screen-once-the-app-is-launched-you-will-see-the-splash-screen-that-connects-to-the-internet-to" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Splash Screen: Once the app is launched, you will see the splash screen that connects to the internet to</h3>
+
+<p>fetch the current map configurations.</p>
+</li>
+</ul>
+
+<p>(2)</p>
+
+<ul>
+<li>###Option Page: When you open our application on your android device, after the splash screen gets loaded, you will see an option page. You can either choose cellular or wifi by clicking either of the buttons.</li>
+</ul>
+
+<p>(3)</p>
+
+<ul>
+<li>###Cellular information Page: This is the cellular information page that gives the UI of the google map. There are three
+buttons on this page.</li>
+<li>The City button takes you to the current city’s location and adds a marker to it.</li>
+<li>With the Submit Data button you can drop a pin on your current location indicating the signal strength of your carrier. You can click on the marker to view the signal strength.</li>
+<li>SS button is another button on this page that retrieves all the markers existing in the database on the map.</li>
+</ul>
+
+<p>(4)</p>
+
+<ul>
+<li>
+<h3>
+<a id="submit-data-button-click-when-you-click-on-the-button-submit-data-an-entry-is-created-in-the-database-and-a-marker-is-dropped-at-your-current-location-displaying-the-signal-strength-of-your-carrier-at-that-location" class="anchor" href="#submit-data-button-click-when-you-click-on-the-button-submit-data-an-entry-is-created-in-the-database-and-a-marker-is-dropped-at-your-current-location-displaying-the-signal-strength-of-your-carrier-at-that-location" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Submit Data Button Click: When you click on the button submit data, an entry is created in the database and a marker is dropped at your current location displaying the signal strength of your carrier at that location.</h3>
+
+<p>(5)</p>
+</li>
+<li><h3>
+<a id="ss-button-click-when-you-click-on-this-button-all-the-entries-in-the-database-gets-displayed-on-the-map-in-the-form-of-markers-with-varied-signal-strengths-the-red-marker-indicates-that-the-signal-strength-is-low-blue-marker-indicates-that-the-signal-strength-is-average-and-the-green-marker-indicates-that-the-signal-strength-at-that-particular-location-is-good" class="anchor" href="#ss-button-click-when-you-click-on-this-button-all-the-entries-in-the-database-gets-displayed-on-the-map-in-the-form-of-markers-with-varied-signal-strengths-the-red-marker-indicates-that-the-signal-strength-is-low-blue-marker-indicates-that-the-signal-strength-is-average-and-the-green-marker-indicates-that-the-signal-strength-at-that-particular-location-is-good" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SS Button Click: When you click on this button, all the entries in the database gets displayed on the map in the form of markers with varied signal strengths. The red marker indicates that the signal strength is low, blue marker indicates that the signal strength is average and the green marker indicates that the signal strength at that particular location is good.</h3></li>
+</ul>
+
+<p>(6)</p>
+
+<ul>
+<li>###Inflater Menu Options: The inflater menu consists of options such as to select carrier or to view markers within a certain distance.</li>
+</ul>
+
+<p>(7)</p>
+
+<ul>
+<li>###Wifi Page: This is the wifi information page that gives the UI of the google map. There are three buttons on this page.</li>
+<li>The City button takes you to the current city’s location and adds a marker to it.</li>
+<li>With the Submit Data button you can drop a pin on your current location indicating the wifi strength of the wifi to which you are connected. You can click on the marker to view the wifi strength.</li>
+<li>SS button is another button on this page that retrieves all the markers existing in the database on the map with varied wifi strengths.</li>
+</ul>
+
+<p>(8)</p>
+
+<ul>
+<li>### Wifi Page SS button click: When you click on this button, all the entries in the database gets displayed on the map in the form of markers with varied wifi strengths. The red marker indicates that the wifi strength is low, blue marker indicates that the wifi strength is average and the green marker indicates that the wifi strength at that particular location is good.</li>
+</ul>
+
+<p>(9)</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/abhie19/Signal-Map">Signal-map</a> is maintained by <a href="https://github.com/abhie19">abhie19</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
